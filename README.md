@@ -7,7 +7,7 @@ Fake nodes approach give the possibility to obtain a better interpolation withou
 
 ![fig2](runge_lebesgue.png)
 
-In the next notebooks we will show the treatment of two classical phenomena in polynomial interpolation: the [Runge effect](Runge.ipynb) effect and the [Gibbs effect](Gibbs.ipynb) effect.
+In the next notebooks we will show the treatment of two classical phenomena in polynomial interpolation: the [Runge effect](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) effect and the [Gibbs effect](https://en.m.wikipedia.org/wiki/Gibbs_phenomenon#Solutions) effect.
 
 ![fig3](gibbs_interp2.png)
 
