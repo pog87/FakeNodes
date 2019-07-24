@@ -3,7 +3,7 @@ Python code for [Fake Nodes interpolation approach](FakeNodes.ipynb).
 
 ![fig1](runge_interp.png)
 
-Fake nodes approach give the possibility to obtain a better interpolation without getting new samples!
+Fake nodes approach gives the possibility to obtain a better interpolation without getting new samples!
 
 ![fig2](runge_lebesgue.png)
 
