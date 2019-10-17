@@ -14,4 +14,4 @@ In the next notebooks, we will show the treatment of two classical phenomena in 
 
 To use this work in any scientific report or publication, please cite:
 
- * S. De Marchi, F. Marchetti, E. Perracchione, D. Poggiali, *Polynomial Interpolation at Fake Nodes* [link](https://www.sciencedirect.com/science/article/pii/S0377042719303449), JCAM.
+ * S. De Marchi, F. Marchetti, E. Perracchione, D. Poggiali, *Polynomial interpolation via mapped bases without resampling* [link](https://www.sciencedirect.com/science/article/pii/S0377042719303449), JCAM.
