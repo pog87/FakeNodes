@@ -1,21 +1,8 @@
 import numpy as np
 import numpy.matlib
 
-def drange(start, stop, step):
-    r = start
-    while r < stop:
-        yield r
-        r += step
 
-#def d(nodes,interval):
-#    greatest = None
-#    for x in interval:
-#        current = y(x,nodes)
-#        if greatest is None or current > greatest:
-#            greatest = current
-#    return greatest
-
-def lebesgue(x,xx):
+def lebesgue(x, xx):
     L = np.abs( lagrange(x,xx) )
     return np.sum( L, axis = -1 )
 
