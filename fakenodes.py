@@ -1,30 +1,6 @@
 import numpy as np
 import numpy.matlib
 
-# For compunting the Lebesgue functions
-def l_j(j, x, nodes):
-    N = np.shape(nodes)[0]
-    product = 1.0
-    for i in range(0, N):
-        if not i==j:
-            product *= (x - nodes[i]) / (nodes[j] - nodes[i])
-    return product
-
-def lS_j(j, x, nodes,S):
-    N = np.shape(nodes)[0]
-    product = 1.0
-    for i in range(0, N):
-        if not i==j:
-            product *= (S(x) - S(nodes[i])) / (S(nodes[j]) - S(nodes[i]))
-    return product
-
-#def y(x,nodes):
-#    N = np.shape(nodes)[0]
-#    csum = 0
-#    for j in range(0, N):
-#        csum += np.abs(l_j(j, x, nodes))
-#    return csum
-
 def drange(start, stop, step):
     r = start
     while r < stop:
@@ -40,18 +16,19 @@ def drange(start, stop, step):
 #    return greatest
 
 def lebesgue(x,xx):
-    N = np.shape(x)[0]
-    lsum = np.zeros(np.shape(xx)[0])
-    for i in range(0, N):
-        lsum += np.abs(l_j(i,xx, x))
-    return lsum
+    L = np.abs( lagrange(x,xx) )
+    return np.sum( L, axis = -1 )
 
-def lagrange_interp(xx,x,y):
+def lagrange(x, xx):
     n=len(x); m=len(xx)
     L=np.zeros((m,n))
     for k in range(n):
         x_k = np.concatenate((x[:k],x[k+1:]))
         L[:,k] = np.prod(np.matlib.repmat(xx.reshape(m,1),1,n-1) - np.matlib.repmat(x_k,m,1) , axis=1) / np.prod(x[k]-x_k)
+    return L
+
+def lagrange_interp(x,y,xx):
+    L = lagrange(x,xx)
     return np.dot(L,y)
 
 
