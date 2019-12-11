@@ -18,6 +18,22 @@ To use this work in any scientific report or publication, please cite:
 
 Fake Nodes is a novel approach to numerical interpolation that aims to achieve a better interpolation without having to get new samples. You can use your samples as they were taken at better/more representative nodes, cheating with the interpolation domain by applying a map.
 
+In terms of code: suppose you have an interpolation function
+
+```python
+def my_fancy_interpolator(x,y,xx):
+  .......
+  .......
+  return yy
+```
+
+and a mapping `S = lambda x: ....`, if you want to use the fake nodes interpolation it is sufficient to call
+
+```python
+yy = my_fancy_interpolator(S(x),y,S(xx))
+```
+
+...very simple, isn't it? Yet the theory standing behind this scheme is not that trivial..[check it out!](https://www.sciencedirect.com/science/article/pii/S0377042719303449).
 
 ![fig2](runge_lebesgue.png)
 
