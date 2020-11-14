@@ -37,7 +37,7 @@ yy = my_fancy_interpolator(S(x),y,S(xx))
 
 ![fig2](runge_lebesgue.png)
 
-In the next notebooks, we will show the treatment of two classical phenomena in polynomial interpolation: the [Runge effect](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) effect and the [Gibbs effect](https://en.m.wikipedia.org/wiki/Gibbs_phenomenon#Solutions) effect.
+In the next notebooks, we will show the treatment of two classical phenomena in polynomial interpolation: the [Runge effect](https://en.wikipedia.org/wiki/Runge%27s_phenomenon) and the [Gibbs effect](https://en.m.wikipedia.org/wiki/Gibbs_phenomenon#Solutions).
 
 ![fig3](gibbs_interp2.png)
 
