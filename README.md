@@ -3,6 +3,7 @@ Python code for [Fake Nodes interpolation approach](FakeNodes.ipynb).
 
 Fake nodes approach gives the possibility to obtain a better interpolation without getting new samples!
 
+For the implementation of the fake nodes approach in 2D we refer to https://github.com/pog87/FakeNodes2D 
 
 ## Quote this work
 
